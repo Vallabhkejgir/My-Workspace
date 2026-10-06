@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "name": "⚓ Firstmate (Vallabh)",
+      "path": "."
+    },
+    {
+      "name": "📦 Github Projects",
+      "path": "Github"
+    }
+  ],
+  "settings": {
+    "git.autoRepositoryDetection": "subFolders",
+    "git.scanRepositories": [
+      "Github"
+    ],
+    "git.repositoryScanMaxDepth": 2,
+    "git.ignoredRepositories": [
+      "Github/.worktrees"
+    ],
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.env.windows": {
+      "PATH": "${env:PATH};${env:USERPROFILE}\\.local\\bin;C:\\Program Files\\GitHub CLI"
+    }
+  }
+}

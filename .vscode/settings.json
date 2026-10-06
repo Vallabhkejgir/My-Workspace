@@ -1,0 +1,21 @@
+{
+  "git.autoRepositoryDetection": "subFolders",
+  "git.scanRepositories": [
+    "Github"
+  ],
+  "git.repositoryScanMaxDepth": 2,
+  "git.ignoredRepositories": [
+    "Github/.worktrees"
+  ],
+  "files.exclude": {
+    "Github/.worktrees": true
+  },
+  "search.exclude": {
+    "Github/.worktrees/**": true,
+    "state/**": true
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.env.windows": {
+    "PATH": "${env:PATH};${env:USERPROFILE}\\.local\\bin;C:\\Program Files\\GitHub CLI"
+  }
+}

@@ -1,0 +1,9 @@
+# Private operational state and credentials
+.env
+data/
+state/
+config/
+Github/
+.no-mistakes/
+.lavish/
+.gitconfig-vallabh
