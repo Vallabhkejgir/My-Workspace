@@ -1,0 +1,7 @@
+#!/bin/sh
+# Strip AI co-author and generated-by trailers from commit messages
+msg_file="$1"
+if [ -f "$msg_file" ]; then
+  grep -v -i -E '^[[:space:]]*Co-Authored-By:.*(Claude|Anthropic|noreply@anthropic\.com|Cursor|Copilot|Gemini)' "$msg_file" | \
+  grep -v -E 'Generated with \[Claude Code\]' > "${msg_file}.tmp" && mv "${msg_file}.tmp" "$msg_file"
+fi

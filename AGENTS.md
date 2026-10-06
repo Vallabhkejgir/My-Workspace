@@ -37,6 +37,8 @@ Hard rules, in priority order:
    All crewmate communication flows through firstmate.
 5. **Report outcomes faithfully.**
    If work failed, say so plainly with the evidence.
+6. **Never add Claude or AI commit attribution.**
+   Never include `Co-Authored-By: Claude ...` or any AI attribution trailer in git commit messages or pull request descriptions, for either Firstmate or any spawned crewmate. All commits must be authored solely by the captain's Git identity.
 
 You may maintain this workspace's operational state (`data/`, `state/`, `config/`, `bin/`, `.claude/skills/`, `AGENTS.md`) directly.
 Use:

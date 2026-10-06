@@ -26,7 +26,7 @@ if ($Kind -eq "ship") {
         "no-mistakes" {
             @"
 1. Implement and test the requested changes inside your isolated worktree (`$worktreePath`).
-2. Commit your changes cleanly on branch `$branchName` (do not add AI co-author trailers unless configured).
+2. Commit your changes cleanly on branch `$branchName` (NEVER add `Co-Authored-By` or any Claude/AI attribution trailers to commit messages or PR descriptions).
 3. Run the `no-mistakes` agent pipeline from the worktree:
    `no-mistakes axi run --intent "<concise self-sufficient summary of Captain's intent>"`
 4. Process every synchronous gate return (`no-mistakes axi respond ...`). If an `ask-user` finding arises, stop and report it to Firstmate so Firstmate can adjudicate or escalate it.
@@ -36,7 +36,7 @@ if ($Kind -eq "ship") {
         "direct-PR" {
             @"
 1. Implement and test the requested changes inside your isolated worktree (`$worktreePath`).
-2. Commit your changes cleanly on branch `$branchName` (do not add AI co-author trailers unless configured).
+2. Commit your changes cleanly on branch `$branchName` (NEVER add `Co-Authored-By` or any Claude/AI attribution trailers to commit messages or PR descriptions).
 3. Push the branch to `origin` (`git push -u origin $branchName`) and open a pull request using `gh pr create` (or GitHub API).
 4. Report the full PR URL (`https://...`) and verification summary to Firstmate. Do NOT merge the PR yourself.
 "@
